@@ -1,0 +1,12 @@
+@import 'bootstrap/dist/css/bootstrap.css';
+
+@import './helpers/fonts.scss';
+
+@import './helpers/variables.scss';
+
+@import './helpers/mixins.scss';
+
+* {
+    box-sizing: border-box;
+    font-family: $mainFont;
+}

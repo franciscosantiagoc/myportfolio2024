@@ -1,0 +1,44 @@
+/* Mobile first*/
+@mixin mobile {
+    @media (min-width: #{$mobile}) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (min-width: #{$tablet}) {
+        @content;
+    }
+}
+@mixin tabletmd {
+    @media (min-width: #{$tabletmd}) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+/* Desktop first*/
+
+@mixin df-mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+}
+@mixin df-tablet {
+    @media (max-width: #{$tablet}) {
+        @content;
+    }
+}
+@mixin df-tabletmd {
+    @media (max-width: #{$tabletmd}) {
+        @content;
+    }
+}
+@mixin df-desktop {
+    @media (max-width: #{$desktop}) {
+        @content;
+    }
+}
