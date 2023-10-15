@@ -1,5 +1,6 @@
 import './assets/styles/main.scss'
 import Header from './components/header'
+import Home from './pages/Home'
 
 function App() {
 
@@ -7,7 +8,7 @@ function App() {
     
     <>
       <Header />
-      
+      <Home />
     </>
   )
 }
