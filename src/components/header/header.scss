@@ -12,7 +12,7 @@
       transition: 0.75s;
       height: auto;
       min-height: 100px;
-      ul {
+      .container ul {
         display: flex;
         transition: 0.75s;
         height: auto;
@@ -34,6 +34,10 @@
       li {
         list-style: none;
         padding: 10px 50px;
+        @include df-desktop {
+          padding: 10px 30px;
+        }
+
         @include df-tablet {
           width: 70%;
           padding: 0;
