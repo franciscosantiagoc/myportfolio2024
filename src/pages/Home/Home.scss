@@ -1,0 +1,121 @@
+@import "../../assets/styles/helpers/variables.scss";
+@import "../../assets/styles/helpers/mixins.scss";
+.home {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: #143cf088;
+  position: relative;
+  min-height: 50vh;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./../../assets/images/fondos/fondo_home.jpg);
+    background-size: cover;
+    z-index: -1;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .text-content,
+    .image-content {
+      width: 50%;
+    }
+
+    
+    .text-content {
+      color: $whiteColor;
+      font-family: $secondaryFont;
+      text-align: center;
+      text-transform: uppercase;
+      h3 {
+        font-size: 24px;
+        font-family: $secondaryFont;
+      }
+      h1 {
+        font-size: 32px;
+        font-family: $secondaryFont;
+      }
+      h2 {
+        color: $whiteColor;
+        font-size: 28px;
+        font-weight: 700;
+        -webkit-text-stroke: 1px $greenColor;
+        font-family: $secondaryFont;
+        margin-top: 30px;
+      }
+
+      .btn-download {
+        padding: 10px 40px;
+        color: $whiteColor;
+        font-weight: 600;
+        background-color: $greenColor;
+        border-radius: 8px;
+        outline: solid 2px $secondaryColor;
+        margin-top: 50px;
+        transition: 0.75s;
+        transition-timing-function: ease;
+
+        &:hover {
+          outline: solid 2px $yellowColor;
+          background-color: $primaryColor;
+        }
+      }
+    }
+    .image-content {
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    @include df-desktop {
+      .image-content {
+        width: 350px;
+        height: 350px;;
+      }
+      .text-content {
+        width: 60%
+      }
+    }
+  }
+  @include df-tablet {
+    padding: 100px 0;
+    .container {
+      flex-direction: column-reverse;
+
+      .image-content {
+        width: 250px;
+        height: 250px;
+        img {
+          object-position: center;
+        }
+      }
+      .text-content {
+        width: 100%;
+        h3 {
+          font-size: 18px;
+          text-transform: initial;
+          margin-top: 35px;
+        }
+        h1 {
+          font-size: 22px;
+          text-transform: initial;
+        }
+        h2 {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
