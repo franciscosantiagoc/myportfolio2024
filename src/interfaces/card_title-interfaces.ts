@@ -1,12 +1,13 @@
 export interface DataCards {
-    skills: CardTitle[]
-    knowledge: CardTitle[]
+    skills: Card[]
+    knowledges: Card[]
   }
   
-  export interface CardTitle {
+  export interface Card {
     id: number
     title: string
     image: string
-    isSmallCard: boolean
+    isSmallCard: boolean,
+    textAlt?: string
   }
   

@@ -1,6 +1,6 @@
 import './About.scss';
 import image1 from './../../assets/images/about/picture1.jpg'
-export default function Home() {
+export default function About() {
   return (
     <section className="about" id="about">
       <div className="container">
