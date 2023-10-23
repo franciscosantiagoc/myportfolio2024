@@ -1,0 +1,44 @@
+@import "../../assets/styles/helpers/variables.scss";
+@import "../../assets/styles/helpers/mixins.scss";
+.experiences {
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-color: $primaryColor;
+  position: relative;
+  min-height: 50vh;
+
+  h2.main-title {
+    font-family: $secondaryFont;
+    color: $whiteColor;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    margin-bottom: 60px;
+    @include df-tablet {
+      margin-bottom: 30px;
+      order: 3;
+    }
+  }
+  div[id*="timeline-main"] {
+    .rc-title {
+        color: $whiteColor;
+        &.active {
+            padding: 10px 15px;
+            background-color: $greenColor;
+        }
+    }
+    .rc-card-media {
+        min-height: 180px;
+      img {
+        width: 150px;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+  }
+}
