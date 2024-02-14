@@ -1,5 +1,5 @@
 import { Card } from '../../interfaces/card_title-interfaces';
-import './card-title.scss';
+import './cardTitle.scss';
 
 export default function index( props: Card) {
   const { id, title, image, isSmallCard } = props;
