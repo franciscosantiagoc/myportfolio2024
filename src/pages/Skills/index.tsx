@@ -1,7 +1,7 @@
 import './Skills.scss';
 import CardTitle from './../../components/card-title';
 import { Card } from '../../interfaces/card_title-interfaces';
-import { data } from './data';
+import { data } from './../../data/dataSkills';
 export default function Skills() {
   const { skills, knowledges } = data;
 

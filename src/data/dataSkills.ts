@@ -1,4 +1,4 @@
-import { DataCards } from "../../interfaces/card_title-interfaces";
+import { DataCards } from "../interfaces/card_title-interfaces";
 
 export const data:DataCards = { 
     skills: [
