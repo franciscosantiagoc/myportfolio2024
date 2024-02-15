@@ -54,34 +54,38 @@ export const dataTechnologies: Technology[] = [
         name: "Typescript"
     },
     {
-        id: 11,
+        id: 12,
         name: "Adobe Experience Manager",
         prefix: [
             'AEM',
         ]
     },
     {
-        id: 12,
+        id: 13,
         name: "Spring boot"
     },
     {
-        id: 13,
+        id: 14,
         name: "Spring JPA"
     },
     {
         id: 15,
-        name: "Bootstrap"
+        name: "PHP"
     },
     {
         id: 16,
-        name: "SASS"
+        name: "Bootstrap"
     },
     {
         id: 17,
-        name: "LESS"
+        name: "SASS"
     },
     {
         id: 18,
+        name: "LESS"
+    },
+    {
+        id: 19,
         name: "MySQL",
         prefix: [
             'Database',
@@ -135,6 +139,38 @@ export const dataTechnologies: Technology[] = [
         prefix: [
             'Orm',
             'Object Relational Mapping'
+        ]
+    },
+    {
+        id: 45,
+        name: "Trello",
+        prefix: [
+            'Scrum',
+        ]
+    },
+    {
+        id: 46,
+        name: "Firebase",
+    },
+    {
+        id: 52,
+        name: "Stripe",
+        prefix: [
+            'Pago online'
+        ]
+    },
+    {
+        id: 53,
+        name: "Mercado Pago",
+        prefix: [
+            'Pago online'
+        ]
+    },
+    {
+        id: 54,
+        name: "API MercadoLibre",
+        prefix: [
+            'API'
         ]
     },
 

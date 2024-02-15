@@ -6,16 +6,18 @@ export interface CardProject {
   id: number
   name: string
   description: string
-  date: Date
-  image: string
-  textAlt?: string
+  dateStart: string
+  dateEnd: string
+  image: string[]
+  technologies: number[]
   urlRepo: string
-  urlPage: string
+  urlPage?: string
   urlVideo?: string
 }
 
 export interface Technology {
   id: number
   name: string
+  icon?: string
   prefix?: string[]
 }
