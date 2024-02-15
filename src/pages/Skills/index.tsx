@@ -1,5 +1,5 @@
 import './Skills.scss';
-import CardTitle from './../../components/card-title';
+import CardTitle from '../../components/cardTitle';
 import { Card } from '../../interfaces/card_title-interfaces';
 import { data } from './../../data/dataSkills';
 export default function Skills() {
