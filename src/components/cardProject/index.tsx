@@ -6,7 +6,8 @@ export default function index( props: CardProject) {
   const { id,
     name,
     description,
-    date,
+    dateStart,
+    dateEnd,
     image,
     urlRepo,
     urlPage,
@@ -14,12 +15,12 @@ export default function index( props: CardProject) {
   return (
     <div className={`card `} key={id}>
       <div className="image-content">
-        <img src={image} alt={`Imagen de proyecto ${name}`} />
+        <img src={image[0]} alt={`Imagen de proyecto ${name}`} />
       </div>
       <div className="text-content">
         <h2 className='card_name'>{name}</h2>
         <p className='card_description'>{description}</p>
-        <p className='card_date'>{date.toDateString()}</p>
+        <p className='card_date'>{dateStart} - {dateEnd}</p>
         <CustomButton style="light-button"  text="Ver repositorio" type='link' urlRedirect={urlRepo} target='_blank'></CustomButton>
         <CustomButton style="light-button"  text="Ver proyecto" type='link' urlRedirect={urlPage} target='_blank'></CustomButton>
         { urlVideo && (<CustomButton style="light-button"  text="Ver proyecto" type='link' urlRedirect={urlVideo} target='_blank'></CustomButton>)}
