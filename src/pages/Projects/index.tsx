@@ -13,6 +13,7 @@ export default function index() {
                 description={project.description}
                 dateStart={project.dateStart}
                 dateEnd={project.dateEnd}
+                technologies={project.technologies}
                 urlRepo={project.urlRepo}
                 urlPage={project.urlPage}
                 urlVideo={project.urlVideo}
