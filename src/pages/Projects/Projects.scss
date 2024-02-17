@@ -1,0 +1,33 @@
+@import "../../assets/styles/helpers/variables.scss";
+@import "../../assets/styles/helpers/mixins.scss";
+.projects {
+    padding-top: 100px;
+    padding-bottom: 200px;
+    position: relative;
+    min-height: 50vh;
+    .container {
+        > h2 {
+            //order: 0;
+            font-family: $secondaryFont;
+            color: $primaryColor;
+            text-align: center;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: uppercase;
+            display: block;
+            width: 100%;
+            margin-bottom: 60px;
+            @include df-tablet {
+              margin-bottom: 30px;
+              order: 3;
+            }
+          }
+        .projects-container {
+            display: flex;
+            //flex-direction: column;
+            gap: 15px;
+        }
+    }
+}

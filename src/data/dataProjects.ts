@@ -8,7 +8,9 @@ export const dataProjects: CardProject[] = [
         dateStart: "10-03-2021",
         dateEnd: "5-12-2021",
         image: [
-            ""
+            "images/projects/project01/project01-img01.jpg",
+            "images/projects/project01/project01-img02.jpg",
+            "images/projects/project01/project01-img03.jpg",
         ],
         technologies: [
             8, 10, 15, 20
@@ -24,7 +26,9 @@ export const dataProjects: CardProject[] = [
         dateStart: "01-01-2021",
         dateEnd: "20-08-2021",
         image: [
-            ""
+            "/images/projects/project02/project02-img01.jpg",
+            "/images/projects/project02/project02-img02.jpg",
+            "/images/projects/project02/project02-img03.jpg",
         ],
         technologies: [
             1, 2, 3, 15, 16, 19
@@ -40,7 +44,9 @@ export const dataProjects: CardProject[] = [
         dateStart: "19-10-2021",
         dateEnd: "25-11-2021",
         image: [
-            ""
+            "/images/projects/project03/project03-img01.jpg",
+            "/images/projects/project03/project03-img02.jpg",
+            "/images/projects/project03/project03-img03.jpg",
         ],
         technologies: [
             1, 2, 3, 4, 5, 6, 9, 20, 26, 33
@@ -56,7 +62,9 @@ export const dataProjects: CardProject[] = [
         dateStart: "02-01-2022",
         dateEnd: "25-02-2022",
         image: [
-            ""
+            "/images/projects/project04/project04-img01.jpg",
+            "/images/projects/project04/project04-img02.jpg",
+            "/images/projects/project04/project04-img03.jpg",
         ],
         technologies: [
             1, 2, 3, 4, 5, 6, 9, 20, 26, 33, 45, 46, 52, 53, 54,
