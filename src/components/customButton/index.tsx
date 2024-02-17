@@ -13,9 +13,9 @@ export default function index(props: DataButton) {
   }
   return (
     <Fragment>
-      {props.type == 'button' && (<button className={`${props.style}`} onClick={actionButton}>${props.text}</button>)}
+      {props.type == 'button' && (<button className={`${props.style}`} onClick={actionButton}>{props.text}</button>)}
       
-      {props.type == 'link' && (<a className={`${props.style}`} href={props.urlRedirect} target={props.target}>${props.text}</a>)}
+      {props.type == 'link' && (<a className={`${props.style}`} href={props.urlRedirect} target={props.target}>{props.text}</a>)}
             
     </Fragment>
   )

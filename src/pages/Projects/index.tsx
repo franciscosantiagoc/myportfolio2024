@@ -1,6 +1,8 @@
 import ProjectCard from '../../components/cardProject';
 import { CardProject } from '../../interfaces/card_project-interfaces';
 import { dataProjects } from '../../data/dataProjects';
+
+import './Projects.scss';
 export default function index() {
     const paintProjects = (projects: CardProject[]) => {
         return(
@@ -31,7 +33,7 @@ export default function index() {
             <h2 className='main-title'>Proyectos</h2>
             <form className="search-project">
                 <div className="input-group mb-3 d-block">
-                    <label htmlFor="input-seach-project">@example.com</label>
+                    <label htmlFor="input-seach-project">Busqueda de proyecto</label>
                     <input type="text" className="form-control w-100" id="input-seach-project" placeholder="Escriba la tecnología o nombre del proyecto"/>
                 </div>
             </form>

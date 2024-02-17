@@ -19,7 +19,7 @@ export default function index( props: CardProject) {
     urlVideo = null } = props;
 
   return (
-    <div className={`card `} key={id}>
+    <div className='project-card active' key={id}>
       <div className="image-content">
         <img src={image[0]} alt={`Imagen de proyecto ${name}`} />
       </div>
