@@ -18,7 +18,7 @@ export default function Skills() {
   return (
     <section className="skills" id="knowledge">
       <div className="container">
-        <h2 className='main-title'>About me</h2>
+        <h2 className='main-title'>MY SKILLS</h2>
         <div className="skills-content">
           {
             paintCards(skills)
