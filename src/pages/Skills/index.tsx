@@ -8,8 +8,8 @@ export default function Skills() {
   const paintCards = (skills: Card[]) => {
     return(
       <>
-        {skills.map((skill: Card) => {
-          return (<CardTitle title={skill.title} id={skill.id} image={skill.image} isSmallCard={skill.isSmallCard} />)
+        {skills.map((skill: Card, index:number) => {
+          return (<CardTitle key={`skill-${index}`} title={skill.title} id={skill.id} image={skill.image} isSmallCard={skill.isSmallCard} />)
         })}      
       </>
     )
